@@ -27,56 +27,39 @@ img {
 body {
   font-family: var(--body-font);
   color: var(--body-color);
-  background-image: url("https://images.unsplash.com/photo-1445251836269-d158eaa028a6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1951&q=80");
-  background-image: url(https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: color-dodge;
-  background-color: rgba(18, 21, 39, 0.86);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1em 2em;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  &:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      163deg,
-      rgba(31, 29, 43, 1) 21%,
-      rgba(31, 29, 43, 0.3113620448179272) 64%
-    );
-    opacity: 0.4;
-    content: "";
-  }
+  margin: 0;
 }
 
 .container {
   background-color: var(--theme-bg);
-  max-width: 1240px;
-  max-height: 900px;
-  height: 95vh;
   display: flex;
-  overflow: hidden;
+  // overflow: hidden;
   width: 100%;
-  border-radius: 20px;
   font-size: 15px;
   font-weight: 500;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
 .sidebar {
+  position: fixed;
+  z-index: 9;
   width: 220px;
   height: 100%;
-  padding: 30px;
+  padding: 30px; // ko'rish kerak
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -208,9 +191,12 @@ body {
 }
 
 .wrapper {
+  max-width: 1300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  margin-left: auto;
 }
 
 .header {
@@ -306,7 +292,7 @@ body {
 }
 
 .anim {
-  animation: bottom 0.8s var(--delay) both;
+  animation: bottom 0.5s var(--delay) both;
 }
 
 .main-header {
@@ -349,27 +335,45 @@ body {
   }
   &-blog__title {
     font-size: 25px;
-    max-width: 12ch;
+    max-width: 18ch;
     font-weight: 600;
     letter-spacing: 1px;
     color: #fff;
     margin-bottom: 30px;
   }
   &-blog {
-    background-image: url("https://assets.codepen.io/3364143/skate-removebg-preview.png");
-    background-size: 80%;
-    background-position-x: 150px;
     background-color: #31abbd;
     display: flex;
     flex-direction: column;
     width: 65%;
-    padding: 30px;
+    height: 350px;
+    // padding: 30px;
     border-radius: 20px;
-    align-self: stretch;
-    overflow: hidden;
+    // align-self: stretch;
     position: relative;
     transition: background 0.3s;
     background-repeat: no-repeat;
+
+    &__img{
+      width: 100%;
+      height: 350px;
+      border-radius: 20px;
+    }
+    &__title{
+      position: absolute;
+      // bottom: 60px;
+      left: 6%;
+      bottom: 6%;
+    }
+
+    &__live{
+      position: absolute;
+      width: 70px;
+      right: 4%;
+      border-radius: 7px;
+      bottom: 8%;
+    }
+
     & + & {
       margin-left: 20px;
       width: 35%;
@@ -394,7 +398,15 @@ body {
       &,
       & + .main-blog {
         width: 50%;
-        padding: 30px;
+        // padding: 30px;
+        height: 250px;
+
+        &__img{
+          height: 250px;
+        }
+
+
+
       }
       & {
         background-size: cover;
@@ -477,6 +489,7 @@ body {
   @media screen and (max-width: 980px) {
     grid-template-columns: repeat(2, 1fr);
   }
+  padding-bottom: 30px;
 }
 
 .video {
@@ -1048,7 +1061,8 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 @media screen and (max-width: 475px) {
   .main-blog__title {
-    font-size: 20px;
+    font-size: 18px;
+    // border: 1px solid red;
   }
   .author-name {
     font-size: 14px;
