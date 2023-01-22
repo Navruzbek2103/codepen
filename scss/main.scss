@@ -105,6 +105,24 @@ a{
       }
     }
   }
+  .mir__logo{
+
+    width: 108px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 10px;
+    font-size: 16px;
+    transition: all .2s ease-in-out;
+  }
+  .mir__logo:hover{
+    font-weight: 900;
+    color: #0daabc;
+    transform: scale(1.05);
+  }
+  .mir__logo:active{
+    transform: scale(1);
+  }
   &-link {
     &:hover,
     &.is-active {
