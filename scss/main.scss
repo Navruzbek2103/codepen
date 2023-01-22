@@ -57,7 +57,8 @@ a{
 .sidebar {
   position: fixed;
   z-index: 9;
-  width: 220px;
+  width: 15%;
+  // width: 220px;
   height: 100%;
   padding: 30px; // ko'rish kerak
   display: flex;
@@ -66,6 +67,13 @@ a{
   transition-duration: 0.2s;
   overflow-y: auto;
   overflow-x: hidden;
+
+  &__site-logo-img{
+    width: 40px;
+    height: 40px;
+
+  }
+
   .logo {
     display: none;
     width: 30px;
@@ -122,6 +130,7 @@ a{
   &.collapse {
     width: 90px;
     border-right: 1px solid var(--border-color);
+
     .logo-expand,
     .side-title {
       display: none;
@@ -151,6 +160,7 @@ a{
 }
 
 .side-menu {
+  width: 200px;
   display: flex;
   flex-direction: column;
   a {
@@ -191,9 +201,10 @@ a{
 }
 
 .wrapper {
-  max-width: 1300px;
-  width: 100%;
+  // max-width: 1300px;
+  width: 80%;
   display: flex;
+  border: 1px solid red;
   flex-direction: column;
   flex-grow: 1;
   margin-left: auto;
@@ -312,11 +323,37 @@ a{
   z-index: 11;
 }
 
+.small-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .small-header {
+  position: relative;
   font-size: 24px;
   font-weight: 500;
   color: #fff;
+  padding-bottom: 10px;
   margin: 30px 0 20px;
+}
+
+.small-header::before{
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  width: 63px;
+  height: 3px;
+  background-color: red;
+}
+
+.small-wrapper-img{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .main {
@@ -1087,6 +1124,7 @@ button.vjs-play-control.vjs-control.vjs-button {
     width: 40px;
   }
   .sidebar {
+
     align-items: center;
   }
   body {
