@@ -9,6 +9,10 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  background: #1F1D2B;
+}
+
 img {
   max-width: 100%;
 }
@@ -1233,10 +1237,11 @@ button.vjs-play-control.vjs-control.vjs-button {
     background: #252936;
   }
   .side-wrapper {
-    padding: 0;
+    padding: 10px 0;
+    margin: 0 auto;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   .side-wrapper .side-menu {
@@ -1255,6 +1260,7 @@ button.vjs-play-control.vjs-control.vjs-button {
     align-items: center;
   }
   .sidebar-link svg {
+    margin-bottom: 10px;
     margin-right: 0;
   }
   .live-category {
