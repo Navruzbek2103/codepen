@@ -43,7 +43,13 @@ body {
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -98,7 +104,7 @@ a {
   top: -30px;
   left: 0;
   background: var(--theme-bg);
-  width: 200px;
+  width: 110px;
   height: 70px;
   z-index: -1;
 }
@@ -107,8 +113,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
+  margin: 0 !important;
+  font-size: 15px;
   transition: all 0.2s ease-in-out;
+  background: transparent;
 }
 .sidebar .mir__logo:hover {
   font-weight: 900;
@@ -222,7 +230,7 @@ a {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  padding: 30px;
+  padding: 30px 40px;
 }
 
 .search-bar {
@@ -1153,6 +1161,10 @@ button.vjs-play-control.vjs-control.vjs-button {
   border-radius: 10px;
 }
 
+.category-wrap {
+  margin-left: 200px !important;
+}
+
 .live {
   display: flex;
   justify-content: space-between;
@@ -1195,6 +1207,14 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 
 @media screen and (max-width: 920px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0;
+  }
   .sidebar__box {
     width: 100%;
     position: fixed !important;
@@ -1257,8 +1277,24 @@ button.vjs-play-control.vjs-control.vjs-button {
   .live__chat {
     width: 95%;
   }
+  .category-wrap {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 0 !important;
+  }
+  .category__menu {
+    width: 300px;
+    z-index: 44;
+  }
 }
-.category__menu {
-  width: 300px;
-  z-index: 44;
+@media screen and (max-width: 520px) {
+  .live__videos {
+    width: 100%;
+  }
+  .video-live {
+    width: 90%;
+  }
 }/*# sourceMappingURL=main.css.map */
