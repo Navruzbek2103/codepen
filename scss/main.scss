@@ -57,7 +57,7 @@ a{
   z-index: 9;
   width: 15%;
   // width: 220px;
-
+  position: relative;
   height: 100%;
   padding: 30px; // ko'rish kerak
   display: flex;
@@ -1166,4 +1166,109 @@ button.vjs-play-control.vjs-control.vjs-button {
 ::-webkit-scrollbar-thumb {
   background-color: #15141aa1;
   border-radius: 10px;
+}
+
+
+.live{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  // margin-left: 300px;
+}
+.live__videos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.video-live{
+  width:250px;
+}
+.live__wrap{
+  width: 60% !important;
+}
+.live-small{
+  padding: 0 50px;
+}
+.live__chat-stream{
+  display: flex;
+  flex-direction: column;
+  width: 400px!important;
+}
+.live-small{
+  width: 100%;
+}
+.side{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width:920px) {
+  .sidebar__box{
+    width: 100%;
+    position: fixed !important;
+    bottom: 0!important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+  }
+  .sidebar__box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #252936;
+  }
+  .side-wrapper{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .side-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .side-menu{
+    width: 90%;
+  }
+  .sidebar-link{
+    margin: 0!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    svg{
+      margin-right: 0;
+    }
+  }
+.live-category{
+  display: none;
+}
+.mir__logo{
+  display: none!important;
+}
+  .live{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .live__wrap{
+    width: 100%!important;
+  }
+  .live__chat-stream{
+    width: 100%!important;
+  }
+  .live__chat{
+    width: 95%;
+  }
+}
+
+.category__menu{
+  width: 300px;
+  z-index: 44;
 }
