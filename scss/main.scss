@@ -37,8 +37,6 @@ body {
 
 .container {
   background-color: var(--theme-bg);
-  display: flex;
-  // overflow: hidden;
   width: 100%;
   font-size: 15px;
   font-weight: 500;
@@ -55,10 +53,11 @@ a{
 }
 
 .sidebar {
-  position: fixed;
+  // right: 0;
   z-index: 9;
   width: 15%;
   // width: 220px;
+
   height: 100%;
   padding: 30px; // ko'rish kerak
   display: flex;
@@ -72,6 +71,10 @@ a{
     width: 40px;
     height: 40px;
 
+  }
+
+  .sidebar__box{
+    position: fixed;
   }
 
   .logo {
@@ -223,7 +226,7 @@ a{
   width: 80%;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  // flex-grow: 1;
   margin-left: auto;
 }
 
