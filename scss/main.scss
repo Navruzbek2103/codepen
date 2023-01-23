@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
   outline: none;
   box-sizing: border-box;
 }
@@ -60,11 +58,13 @@ p {
   margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 .sidebar {
+  // right: 0;
+  z-index: 9;
   width: 15%;
   // width: 220px;
   position: relative;
@@ -84,7 +84,6 @@ a{
 
   .sidebar__box {
     position: fixed;
-    z-index: 9;
   }
 
   .logo {
@@ -118,15 +117,17 @@ a{
       }
     }
   }
-  .mir__logo{
 
+  
+  .mir__logo {
     width: 108px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // gap: 10px;
-    font-size: 16px;
-    transition: all .2s ease-in-out;
+    margin: 0!important;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+    background: transparent;
   }
   .mir__logo:hover {
     font-weight: 900;
@@ -233,7 +234,7 @@ a{
 
 .wrapper {
   // max-width: 1300px;
-  width: 85%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   // flex-grow: 1;
@@ -378,26 +379,13 @@ a{
   background-color: red;
 }
 
-.small-wrapper-img{
+.small-wrapper-img {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  cursor: pointer;
-  background-image: url("./../images/arrow-right-24.png");
   background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
   border-radius: 50%;
 }
-
-// .small-wrapper-img{
-//   cursor: pointer;
-//   width: 30px;
-//   height: 30px;
-//   background-color: #fff;
-//   border-radius: 50%;
-// }
 
 .main {
   &-blogs {
@@ -1184,4 +1172,136 @@ button.vjs-play-control.vjs-control.vjs-button {
 ::-webkit-scrollbar-thumb {
   background-color: #15141aa1;
   border-radius: 10px;
+}
+
+.category-wrap {
+  margin-left: 200px !important;
+}
+.live {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  // margin-left: 300px;
+}
+.live__videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.video-live {
+  width: 250px;
+}
+.live__wrap {
+  width: 60% !important;
+}
+.live-small {
+  padding: 0 50px;
+}
+.live__chat-stream {
+  display: flex;
+  flex-direction: column;
+  width: 400px !important;
+}
+.live-small {
+  width: 100%;
+}
+.side {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 920px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0;
+  }
+  .sidebar__box {
+    width: 100%;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .sidebar__box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #252936;
+  }
+  .side-wrapper {
+    padding: 10px 0;
+    margin: 0 auto; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .side-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .side-menu {
+    width: 90%;
+  }
+  .sidebar-link {
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    svg {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }
+  .live-category {
+    display: none;
+  }
+  .mir__logo {
+    display: none !important;
+  }
+  .live {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .live__wrap {
+    width: 100% !important;
+  }
+  .live__chat-stream {
+    width: 100% !important;
+  }
+  .live__chat {
+    width: 95%;
+  }
+  .category-wrap {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 0 !important;
+  }
+  .category__menu {
+    width: 300px;
+    z-index: 44;
+  }
+}
+@media screen and (max-width: 520px) {
+  .live__videos{
+    width: 100%;
+  }
+  .video-live{
+    width: 90%;
+  }
 }
