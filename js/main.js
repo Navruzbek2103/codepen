@@ -53,3 +53,14 @@ $(function () {
   $(".video-detail .author-img").attr("src", img);
  });
 });
+
+const allCards = document.querySelectorAll(".small-header")
+
+allCards.forEach(element => {
+  let urlLink = window.getComputedStyle(element, ":after").backgroundImage
+  element.addEventListener("click", (e) => {
+    // console.log(urlLink);
+    window.location.replace("allDocs.html")
+    // console.log(e.target);
+  })
+});
