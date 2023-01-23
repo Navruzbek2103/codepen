@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: #1f1d2b;
+  background: #1F1D2B;
 }
 
 img {
@@ -59,6 +59,16 @@ body {
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
@@ -146,8 +156,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .sidebar .mir__logo:hover {

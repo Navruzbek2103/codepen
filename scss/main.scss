@@ -12,8 +12,8 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-body {
-  background: #1f1d2b;
+body{
+  background: #1F1D2B;
 }
 
 img {
@@ -50,7 +50,17 @@ body {
   position: relative;
 }
 
-a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a{
   text-decoration: none;
 }
 
@@ -108,14 +118,15 @@ a {
       }
     }
   }
-  .mir__logo {
+  .mir__logo{
+
     width: 108px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     // gap: 10px;
     font-size: 16px;
-    transition: all 0.2s ease-in-out;
+    transition: all .2s ease-in-out;
   }
   .mir__logo:hover {
     font-weight: 900;
@@ -367,7 +378,7 @@ a {
   background-color: red;
 }
 
-.small-wrapper-img {
+.small-wrapper-img{
   cursor: pointer;
   width: 30px;
   height: 30px;
