@@ -5,15 +5,15 @@ $(function () {
  });
 });
 
-$(window)
- .resize(function () {
-  if ($(window).width() > 1090) {
-   $(".sidebar").removeClass("collapse");
-  } else {
-   $(".sidebar").addClass("collapse");
-  }
- })
- .resize();
+// $(window)
+//  .resize(function () {
+//   if ($(window).width() > 1090) {
+//    $(".sidebar").removeClass("collapse");
+//   } else {
+//    $(".sidebar").addClass("collapse");
+//   }
+//  })
+//  .resize();
 
 const allVideos = document.querySelectorAll(".video");
 

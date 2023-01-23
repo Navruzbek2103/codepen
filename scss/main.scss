@@ -12,6 +12,10 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  background: #1f1d2b;
+}
+
 img {
   max-width: 100%;
 }
@@ -46,23 +50,6 @@ body {
   position: relative;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -70,7 +57,7 @@ a {
 .sidebar {
   width: 15%;
   // width: 220px;
-
+  position: relative;
   height: 100%;
   padding: 30px; // ko'rish kerak
   display: flex;
@@ -115,7 +102,7 @@ a {
         top: -30px;
         left: 0;
         background: var(--theme-bg);
-        width: 200px;
+        width: 110px;
         height: 70px;
         z-index: -1;
       }
@@ -246,7 +233,7 @@ a {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  padding: 30px;
+  padding: 30px 40px;
 }
 
 .search-bar {
@@ -380,11 +367,8 @@ a {
   background-color: red;
 }
 
-.small-header::after {
-  position: absolute;
-  right: 0;
-  content: "";
-  display: inline-block;
+.small-wrapper-img {
+  cursor: pointer;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -1189,89 +1173,4 @@ button.vjs-play-control.vjs-control.vjs-button {
 ::-webkit-scrollbar-thumb {
   background-color: #15141aa1;
   border-radius: 10px;
-}
-
-// allDocs page
-
-.allDocs {
-  max-width: 1530px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 30px 20px;
-
-  &__wrapper {
-    &-prev-link {
-      display: flex;
-      font-size: 20px;
-      color: cyan;
-      gap: 8px;
-    }
-
-    &-title {
-      text-align: center;
-      margin-bottom: 20px;
-      width: 100%;
-      font-size: 26px;
-    }
-
-    &-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-    }
-
-    &-item {
-      margin: 5px auto;
-      &-link {
-        max-width: 350px;
-        width: 100%;
-        display: block;
-        padding: 20px;
-        background-color: rgb(2, 111, 75);
-        box-shadow: 0 0 15px 1px cyan;
-        border-radius: 5px;
-        color: black;
-        transition: all .2s ease-in-out;
-
-        &:hover {
-          box-shadow: 0 0 20px 5px cyan;
-        }
-
-        &:active {
-          transform: scale(0.95);
-        }
-      }
-
-      &-img {
-        width: 350px;
-        height: 250px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-      }
-
-      &-title {
-        font-size: 20px;
-        line-height: 25px;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-      }
-
-      &-list {
-        padding-left: 30px;
-        list-style: disc;
-        margin-bottom: 20px;
-      }
-
-      &-item {
-        font-style: italic;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-      }
-
-      &-text {
-        font-size: 18px;
-        letter-spacing: 1px;
-      }
-    }
-  }
 }
