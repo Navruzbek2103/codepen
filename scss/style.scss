@@ -283,11 +283,11 @@ a {
     padding-left: 20px;
     flex-shrink: 0;
     margin-left: auto;
-.last-videos-block {
-  @media screen and (max-width: 675px) {
-    margin-bottom: 50px;
-  }
-}
+    .last-videos-block {
+      @media screen and (max-width: 675px) {
+        margin-bottom: 50px;
+      }
+    }
     svg {
       width: 10px;
       flex-shrink: 0;
@@ -371,6 +371,7 @@ a {
 
 .small-header {
   position: relative;
+  display: flex;
   font-size: 24px;
   font-weight: 500;
   color: #fff;
@@ -388,13 +389,50 @@ a {
   background-color: red;
 }
 
-.small-wrapper-img {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
+.small-header::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url("./../images/arrow-right-24.png");
   background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 50%;
+  background-position: center;
+  cursor: pointer;
 }
+
+.small-header2 {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 10px;
+  margin: 30px 0 20px;
+}
+
+.small-header2::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  width: 63px;
+  height: 3px;
+  background-color: red;
+}
+
+// .small-wrapper-img {
+//   cursor: pointer;
+//   width: 30px;
+//   height: 30px;
+//   background-color: #fff;
+//   border-radius: 50%;
+//   border: 1px solid cyan;
+
+// }
 
 .main {
   &-blogs {
@@ -1151,7 +1189,6 @@ button.vjs-play-control.vjs-control.vjs-button {
   min-height: 414px;
 }
 
-
 @media screen and (max-width: 735px) {
   .main-blogs {
     flex-wrap: wrap;
@@ -1243,15 +1280,13 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 .live-small {
   padding: 0 50px;
+  width: 100%;
 }
 .live__chat-stream {
-  // border: 1px solid red;
   display: flex;
   flex-direction: column;
   width: 200px;
-}
-.live-small {
-  width: 100%;
+  margin-top: 30px;
 }
 .side {
   position: fixed;
