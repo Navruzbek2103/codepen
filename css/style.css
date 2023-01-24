@@ -312,7 +312,7 @@ a {
 }
 
 .wrapper {
-  width: 80%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,6 +324,10 @@ a {
 }
 
 .header {
+  position: fixed;
+  width: 84%;
+  z-index: 19;
+  background-color: #1F1D2B;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,7 +336,9 @@ a {
           align-items: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 30px 0px;
+  padding: 20px 30px;
+  padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .search-bar {
@@ -374,6 +380,7 @@ a {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-left: auto;
+  gap: 8px;
 }
 
 @media screen and (max-width: 675px) {
@@ -386,12 +393,6 @@ a {
   width: 10px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-
-@media screen and (max-width: 575px) {
-  .user-settings svg {
-    display: none;
-  }
 }
 
 .user-settings .notify {
@@ -457,6 +458,7 @@ a {
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow: auto;
+  margin-top: 80px;
 }
 
 .anim {
@@ -2003,5 +2005,17 @@ button.vjs-play-control.vjs-control.vjs-button {
 .allDocs__wrapper-item-text {
   color: black;
   font-size: 17px;
+}
+
+.live-box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,15 +5,6 @@ $(function () {
   });
 });
 
-// $(window)
-//  .resize(function () {
-//   if ($(window).width() > 1090) {
-//    $(".sidebar").removeClass("collapse");
-//   } else {
-//    $(".sidebar").addClass("collapse");
-//   }
-//  })
-//  .resize();
 
 const allVideos = document.querySelectorAll(".video");
 
@@ -28,40 +19,13 @@ allVideos.forEach((v) => {
   });
 });
 
-// $(function () {
-//  $(".logo, .logo-expand, .discover").on("click", function (e) {
-//   $(".main-container").removeClass("show");
-//   $(".main-container").scrollTop(0);
-//  });
-//  $(".trending, .video").on("click", function (e) {
-//   $(".main-container").addClass("show");
-//   $(".main-container").scrollTop(0);
-//   $(".sidebar-link").removeClass("is-active");
-//   $(".trending").addClass("is-active");
-//  });
-
-//  $(".video").click(function () {
-//   var source = $(this).find("source").attr("src");
-//   var title = $(this).find(".video-name").text();
-//   var person = $(this).find(".video-by").text();
-//   var img = $(this).find(".author-img").attr("src");
-//   $(".video-stream video").stop();
-//   $(".video-stream source").attr("src", source);
-//   $(".video-stream video").load();
-//   $(".video-p-title").text(title);
-//   $(".video-p-name").text(person);
-//   $(".video-detail .author-img").attr("src", img);
-//  });
-// });
 
 const allCards = document.querySelectorAll(".small-header");
 
 allCards.forEach((element) => {
   let urlLink = window.getComputedStyle(element, ":after").backgroundImage;
   element.addEventListener("click", (e) => {
-    // console.log(urlLink);
     window.location.replace("allDocs.html");
-    // console.log(e.target);
   });
 });
 
