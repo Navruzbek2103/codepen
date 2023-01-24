@@ -561,6 +561,12 @@ a {
   padding-bottom: 30px;
 }
 
+.last-videos-block {
+  @media screen and (max-width: 750px) {
+    margin-bottom: 60px;
+  }
+}
+
 .video {
   position: relative;
   background-color: var(--video-bg);
@@ -834,10 +840,9 @@ video {
   width: 100%;
 }
 
-// .chat{
-//   border: 1px solid red;
-
-// }
+.chat {
+  width: 90%;
+}
 
 .chat-header {
   display: flex;
@@ -867,7 +872,7 @@ video {
 }
 
 .chat-stream {
-  width: 40%;
+  width: 25%;
   flex-grow: 1;
   margin-left: 30px;
 }
@@ -1133,6 +1138,17 @@ button.vjs-play-control.vjs-control.vjs-button {
   overflow: hidden;
   min-height: 414px;
 }
+// .chat-vid{
+
+// &__container{
+// width: 90%;
+// }
+
+// &__button{
+//   width: 90%;
+
+// }
+// }
 
 @media screen and (max-width: 735px) {
   .main-blogs {
@@ -1221,18 +1237,19 @@ button.vjs-play-control.vjs-control.vjs-button {
   width: 250px;
 }
 .live__wrap {
-  width: 60% !important;
+  width: 60%;
 }
 .live-small {
   padding: 0 50px;
 }
 .live__chat-stream {
+  // border: 1px solid red;
   display: flex;
   flex-direction: column;
-  width: 400px !important;
+  width: 200px;
 }
 .live-small {
-  width: 100%;
+  // width: 100%;
 }
 .side {
   position: fixed;
@@ -1310,7 +1327,7 @@ button.vjs-play-control.vjs-control.vjs-button {
     width: 100% !important;
   }
   .live__chat {
-    width: 95%;
+    width: 100%;
   }
   .category-wrap {
     width: 100% !important;
