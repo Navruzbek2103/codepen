@@ -1780,7 +1780,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 .allDocs__wrapper-prev-link {
   padding: 6px 12px;
   border-radius: 5px;
-  width: 7%;
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1789,6 +1789,7 @@ button.vjs-play-control.vjs-control.vjs-button {
           align-items: center;
   color: black;
   gap: 8px;
+  margin-bottom: 15px;
   background-color: #fdc483;
   -webkit-box-shadow: 0 0 8px 1px cyan;
           box-shadow: 0 0 8px 1px cyan;
