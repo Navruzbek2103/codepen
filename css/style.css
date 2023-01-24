@@ -75,6 +75,13 @@ p {
   margin: 0;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -1760,5 +1767,116 @@ button.vjs-play-control.vjs-control.vjs-button {
   .video-live {
     width: 90%;
   }
+}
+
+.containerBox {
+  width: 96vw;
+}
+
+.allDocs__wrapper {
+  padding: 30px 0;
+}
+
+.allDocs__wrapper-prev-link {
+  padding: 6px 12px;
+  border-radius: 5px;
+  width: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  gap: 8px;
+  background-color: #fdc483;
+  -webkit-box-shadow: 0 0 8px 1px cyan;
+          box-shadow: 0 0 8px 1px cyan;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.allDocs__wrapper-prev-link:hover {
+  -webkit-box-shadow: 0 0 12px 2px cyan;
+          box-shadow: 0 0 12px 2px cyan;
+}
+
+.allDocs__wrapper-prev-link:active {
+  -webkit-box-shadow: 0 0 20px 6px #049d9d;
+          box-shadow: 0 0 20px 6px #049d9d;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.allDocs__wrapper-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.allDocs__wrapper-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.allDocs__wrapper-item {
+  background-color: rgba(127, 126, 128, 0.7);
+  max-width: 260px;
+  width: 100%;
+  padding: 12px;
+  margin: 12px auto;
+  border-radius: 8px;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.allDocs__wrapper-item:hover {
+  -webkit-box-shadow: 0 0 12px 1px cyan;
+          box-shadow: 0 0 12px 1px cyan;
+}
+
+.allDocs__wrapper-item:active {
+  -webkit-box-shadow: 0 0 25px 0 cyan;
+          box-shadow: 0 0 25px 0 cyan;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.allDocs__wrapper-item-img {
+  width: 100%;
+  height: 210px;
+  border-radius: 8px;
+  margin-bottom: 7px;
+}
+
+.allDocs__wrapper-item-title {
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.allDocs__wrapper-item-list {
+  margin-left: 30px;
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
+.allDocs__wrapper-item-item {
+  color: black;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.allDocs__wrapper-item-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.allDocs__wrapper-item-text {
+  color: black;
+  font-size: 17px;
 }
 /*# sourceMappingURL=style.css.map */
