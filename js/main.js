@@ -69,7 +69,7 @@ let lupa = document.querySelector(".lupa");
 let lupa2 = document.querySelector(".lupa-2");
 const Search = document.querySelector(".search");
 
-lupa.addEventListener("click", (e) => {
+lupa.addEventListener("click", () => {
   Search.classList.add("open-search")
   lupa2.classList.add("open-search")
   lupa.classList.add("open-searchs")
@@ -79,4 +79,3 @@ lupa2.addEventListener("click", () => {
   lupa2.classList.remove("open-search")
   lupa.classList.remove("open-searchs")
 });
-
