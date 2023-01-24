@@ -1,8 +1,8 @@
 $(function () {
- $(".sidebar-link").click(function () {
-  $(".sidebar-link").removeClass("is-active");
-  $(this).addClass("is-active");
- });
+  $(".sidebar-link").click(function () {
+    $(".sidebar-link").removeClass("is-active");
+    $(this).addClass("is-active");
+  });
 });
 
 // $(window)
@@ -18,14 +18,14 @@ $(function () {
 const allVideos = document.querySelectorAll(".video");
 
 allVideos.forEach((v) => {
- v.addEventListener("mouseover", () => {
-  const video = v.querySelector("video");
-  video.play();
- });
- v.addEventListener("mouseleave", () => {
-  const video = v.querySelector("video");
-  video.pause();
- });
+  v.addEventListener("mouseover", () => {
+    const video = v.querySelector("video");
+    video.play();
+  });
+  v.addEventListener("mouseleave", () => {
+    const video = v.querySelector("video");
+    video.pause();
+  });
 });
 
 // $(function () {
@@ -54,13 +54,29 @@ allVideos.forEach((v) => {
 //  });
 // });
 
-const allCards = document.querySelectorAll(".small-header")
+const allCards = document.querySelectorAll(".small-header");
 
-allCards.forEach(element => {
-  let urlLink = window.getComputedStyle(element, ":after").backgroundImage
+allCards.forEach((element) => {
+  let urlLink = window.getComputedStyle(element, ":after").backgroundImage;
   element.addEventListener("click", (e) => {
     // console.log(urlLink);
-    window.location.replace("allDocs.html")
+    window.location.replace("allDocs.html");
     // console.log(e.target);
-  })
+  });
 });
+
+let lupa = document.querySelector(".lupa");
+let lupa2 = document.querySelector(".lupa-2");
+const Search = document.querySelector(".search");
+
+lupa.addEventListener("click", (e) => {
+  Search.classList.add("open-search")
+  lupa2.classList.add("open-search")
+  lupa.classList.add("open-searchs")
+});
+lupa2.addEventListener("click", () => {
+  Search.classList.remove("open-search")
+  lupa2.classList.remove("open-search")
+  lupa.classList.remove("open-searchs")
+});
+

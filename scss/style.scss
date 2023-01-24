@@ -79,7 +79,7 @@ a {
   z-index: 9;
   width: 15%;
   // width: 220px;
-  position: relative;
+  position: fixed;
   height: 100%;
   padding: 30px; // ko'rish kerak
   display: flex;
@@ -1258,12 +1258,17 @@ button.vjs-play-control.vjs-control.vjs-button {
   width: 6px;
   border-radius: 10px;
 }
-
+.lupa{
+  cursor: pointer;
+  display: none;
+}
 ::-webkit-scrollbar-thumb {
   background-color: #15141aa1;
   border-radius: 10px;
 }
-
+.relative{
+  position: relative!important;
+}
 .category-wrap {
   margin-left: 200px !important;
 }
@@ -1295,10 +1300,26 @@ button.vjs-play-control.vjs-control.vjs-button {
   width: 200px;
   margin-top: 30px;
 }
+
 .side {
   position: fixed;
   top: 0;
   left: 0;
+}
+.search-bar{
+  position: relative;
+}
+.lupa-2{
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  z-index: 2;
+  background: #353340;
+display: none;
+}
+.open-search{
+  display: block !important;
 }
 @media screen and (max-width: 920px) {
   .sidebar {
@@ -1308,6 +1329,23 @@ button.vjs-play-control.vjs-control.vjs-button {
     justify-content: space-between;
     align-items: center;
     height: 0;
+  }
+  .search{
+    display: none;
+  }
+  
+  .open-searchs{
+    display: none!important;
+  }
+  .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .lupa{
+    display: block;
   }
   .sidebar__box {
     width: 100%;
