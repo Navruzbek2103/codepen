@@ -1230,6 +1230,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 .lupa {
   cursor: pointer;
   display: none;
+  margin: 0 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1291,7 +1292,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 .lupa-2 {
   cursor: pointer;
   position: absolute;
-  top: 2px;
+  top: 5px;
   right: 10px;
   z-index: 2;
   background: #353340;
