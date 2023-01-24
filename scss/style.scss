@@ -588,12 +588,15 @@ a {
     padding: 12px 20px 20px;
     background-color: var(--video-bg);
     position: relative;
+    // border: 1px solid red;
+    color: grey;
   }
   &-by {
     transition: 0.3s;
     padding: 20px 20px 0px;
     display: inline-flex;
     position: relative;
+    color: grey;
     &:before {
       content: "";
       background-color: #22b07d;

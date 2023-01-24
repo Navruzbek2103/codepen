@@ -739,6 +739,7 @@ a {
   padding: 12px 20px 20px;
   background-color: var(--video-bg);
   position: relative;
+  color: grey;
 }
 
 .video-by {
@@ -749,6 +750,7 @@ a {
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
+  color: grey;
 }
 
 .video-by:before {
