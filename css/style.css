@@ -857,7 +857,6 @@ video {
 .video-stream {
   width: 100%;
   padding: 30px;
-  padding-left: 0;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: 0.3s;
@@ -989,6 +988,7 @@ video {
 
 .video-content {
   width: 100%;
+  margin-bottom: 70px;
 }
 
 .button-wrapper {

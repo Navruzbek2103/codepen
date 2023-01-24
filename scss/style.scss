@@ -696,7 +696,7 @@ video {
 .video-stream {
   width: 100%;
   padding: 30px;
-  padding-left: 0;
+  // padding-left: 0;
   object-fit: cover;
   transition: 0.3s;
   &:hover .video-js .vjs-big-play-button {
@@ -787,6 +787,8 @@ video {
 
 .video-content {
   width: 100%;
+  // border: 1px solid red;
+  margin-bottom: 70px;
 }
 
 .button-wrapper {
