@@ -913,9 +913,9 @@ video {
 }
 
 .stream-area-video {
-  width: 80%;
+  width: 60%;
   margin-left: auto;
-  margin-right: 60px;
+  margin-right: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,7 +923,7 @@ video {
 
 @media only screen and (max-width: 1100px) {
   .stream-area-video {
-    margin-right: 40px;
+    margin-right: 180px;
   }
 }
 
@@ -933,8 +933,8 @@ video {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 0;
-    width: 100%;
+    margin-right: 40px;
+    width: 90%;
   }
   .stream-area-video .video-stream {
     width: 100%;
@@ -948,6 +948,13 @@ video {
   }
   .stream-area-video .msg__content {
     max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 920px) and (max-width: 500px) {
+  .stream-area-video {
+    margin-right: 0px;
+    width: 100%;
   }
 }
 
@@ -978,13 +985,13 @@ video {
 
 .video-stream-img {
   width: 100%;
-  height: 600px;
+  height: 450px;
   border-radius: 15px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .video-stream-img {
-    height: 450px;
+    height: 400px;
   }
 }
 
@@ -996,7 +1003,7 @@ video {
 
 @media only screen and (max-width: 450px) {
   .video-stream-img {
-    height: 250px;
+    height: 240px;
   }
 }
 
@@ -1950,8 +1957,8 @@ button.vjs-play-control.vjs-control.vjs-button {
   padding: 12px;
   margin: 12px auto;
   border-radius: 8px;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .allDocs__wrapper-item:hover {
