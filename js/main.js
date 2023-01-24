@@ -43,3 +43,9 @@ lupa2.addEventListener("click", () => {
   lupa2.classList.remove("open-search")
   lupa.classList.remove("open-searchs")
 });
+let burgerMenuImg = document.querySelector(".burger-menu-img");
+let burgerMenu = document.querySelector(".burger-menu")
+
+burgerMenuImg.addEventListener("click", () => {
+  burgerMenu.classList.toggle("burger-menu-show")
+})
