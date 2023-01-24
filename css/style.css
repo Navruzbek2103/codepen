@@ -360,7 +360,6 @@ a {
 }
 
 .burger-menu-img {
-  z-index: 999;
   display: none;
   width: 40px;
 }
@@ -385,7 +384,7 @@ a {
   z-index: 123;
   background-color: #1f1d2b;
   width: 100vw;
-  height: 77vh;
+  height: 100vh;
   overflow: scroll;
   display: none;
   -webkit-transition: all .3s ease-in;
@@ -1825,6 +1824,7 @@ button.vjs-play-control.vjs-control.vjs-button {
         -ms-flex-align: center;
             align-items: center;
     height: 0;
+    z-index: 99999;
   }
   .search {
     display: none;
