@@ -258,7 +258,7 @@ a {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  padding: 30px 40px;
+  padding: 30px 0px;
 }
 
 .search-bar {
@@ -980,9 +980,10 @@ video {
 }
 
 .chat-stream {
-  width: 35%;
+  width: 40%;
   flex-grow: 1;
   padding: 0 20px;
+  padding-right: 0;
   margin-bottom: 80px;
 
   @media screen and (max-width: 940px) {
@@ -998,6 +999,7 @@ video {
   padding: 0 20px;
   max-height: 414px;
   overflow: auto;
+  border: 1px solid red;
   &-footer {
     display: flex;
     align-items: center;
@@ -1045,9 +1047,6 @@ video {
     &__title {
       color: #fff;
       font-size: 18px;
-    }
-    &__container {
-      margin-top: 40px;
     }
     &__wrapper {
       display: flex;

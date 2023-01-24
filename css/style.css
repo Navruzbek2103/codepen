@@ -332,7 +332,7 @@ a {
           align-items: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 30px 40px;
+  padding: 30px 0px;
 }
 
 .search-bar {
@@ -1218,11 +1218,12 @@ video {
 }
 
 .chat-stream {
-  width: 35%;
+  width: 40%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 0 20px;
+  padding-right: 0;
   margin-bottom: 80px;
 }
 
@@ -1239,6 +1240,7 @@ video {
   padding: 0 20px;
   max-height: 414px;
   overflow: auto;
+  border: 1px solid red;
 }
 
 .chat-footer {
@@ -1308,10 +1310,6 @@ video {
 .chat-vid__title {
   color: #fff;
   font-size: 18px;
-}
-
-.chat-vid__container {
-  margin-top: 40px;
 }
 
 .chat-vid__wrapper {
