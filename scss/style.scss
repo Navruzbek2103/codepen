@@ -846,7 +846,7 @@ video {
 }
 
 .chat {
-  width: 90%;
+  width: 100%;
 }
 
 .chat-header {
@@ -877,14 +877,15 @@ video {
 }
 
 .chat-stream {
-  width: 40%;
+  width: 35%;
   flex-grow: 1;
-  margin-left: 30px;
+  padding: 0 20px;
   margin-bottom: 80px;
 
   @media screen and (max-width: 940px) {
     // margin-bottom: 50px;
     width: 100%;
+    margin-bottom: 100px;
   }
 }
 
@@ -1149,17 +1150,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   overflow: hidden;
   min-height: 414px;
 }
-// .chat-vid{
 
-// &__container{
-// width: 90%;
-// }
-
-// &__button{
-//   width: 90%;
-
-// }
-// }
 
 @media screen and (max-width: 735px) {
   .main-blogs {

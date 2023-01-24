@@ -1061,7 +1061,7 @@ video {
 }
 
 .chat {
-  width: 90%;
+  width: 100%;
 }
 
 .chat-header {
@@ -1104,17 +1104,18 @@ video {
 }
 
 .chat-stream {
-  width: 40%;
+  width: 35%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-left: 30px;
+  padding: 0 20px;
   margin-bottom: 80px;
 }
 
 @media screen and (max-width: 940px) {
   .chat-stream {
     width: 100%;
+    margin-bottom: 100px;
   }
 }
 
