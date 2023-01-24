@@ -10,8 +10,8 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-body{
-  background: #1F1D2B;
+body {
+  background: #1f1d2b;
 }
 
 img {
@@ -42,10 +42,15 @@ body {
 .container {
   background-color: var(--theme-bg);
   width: 100%;
+  // display: flex;
   font-size: 15px;
   font-weight: 500;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   position: relative;
+}
+
+.container__wrapper-box {
+  display: flex;
 }
 
 h1,
@@ -118,13 +123,12 @@ a {
     }
   }
 
-  
   .mir__logo {
     width: 108px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0!important;
+    margin: 0 !important;
     font-size: 15px;
     transition: all 0.2s ease-in-out;
     background: transparent;
@@ -656,7 +660,9 @@ video {
 }
 
 .stream-area {
-  display: none;
+  width: 100%;
+  display: flex;
+  // display: none;
   @media screen and (max-width: 940px) {
     flex-direction: column;
     .video-stream {
@@ -675,20 +681,22 @@ video {
   }
 }
 
-.show {
-  .stream-area {
-    display: flex;
-  }
-  .main-header,
-  .main-blogs,
-  .small-header,
-  .videos {
-    display: none;
-  }
-}
+// .show {
+//   .stream-area {
+//     display: flex;
+//   }
+//   .main-header,
+//   .main-blogs,
+//   .small-header,
+//   .videos {
+//     display: none;
+//   }
+// }
 
 .video-stream {
-  width: 65%;
+  width: 100%;
+  padding: 30px;
+  padding-left: 0;
   object-fit: cover;
   transition: 0.3s;
   &:hover .video-js .vjs-big-play-button {
@@ -696,6 +704,14 @@ video {
   }
 }
 
+.video-stream-category {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  &:hover .video-js .vjs-big-play-button {
+    opacity: 1;
+  }
+}
 .video-p {
   margin-right: 12px;
   object-fit: cover;
@@ -813,6 +829,11 @@ video {
   width: 100%;
 }
 
+// .chat{
+//   border: 1px solid red;
+
+// }
+
 .chat-header {
   display: flex;
   align-items: center;
@@ -841,6 +862,7 @@ video {
 }
 
 .chat-stream {
+  width: 40%;
   flex-grow: 1;
   margin-left: 30px;
 }
@@ -994,6 +1016,7 @@ video {
 }
 
 .vjs-poster {
+  // border: 1px solid red;
   background-size: 150%;
 }
 
@@ -1239,7 +1262,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   }
   .side-wrapper {
     padding: 10px 0;
-    margin: 0 auto; 
+    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1298,10 +1321,10 @@ button.vjs-play-control.vjs-control.vjs-button {
   }
 }
 @media screen and (max-width: 520px) {
-  .live__videos{
+  .live__videos {
     width: 100%;
   }
-  .video-live{
+  .video-live {
     width: 90%;
   }
 }
