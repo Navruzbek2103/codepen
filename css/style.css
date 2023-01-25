@@ -205,6 +205,18 @@ a {
   background: #6c5ecf;
 }
 
+.sidebar-link-account {
+  display: none !important;
+}
+
+@media only screen and (max-width: 920px) {
+  .sidebar-link-account {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
 .sidebar-icon-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1938,6 +1950,21 @@ button.vjs-play-control.vjs-control.vjs-button {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+@media only screen and (max-width: 920px) and (max-width: 500px) {
+  .sidebar-link {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 920px) and (max-width: 400px) {
+  .sidebar-link {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 920px) {
   .sidebar-link svg {
     margin-bottom: 10px;
     margin-right: 0;
@@ -2206,7 +2233,6 @@ button.vjs-play-control.vjs-control.vjs-button {
   }
   .search__wrapper-item-link .search__wrapper-item-box-text {
     margin: 0 auto;
-    border: 1px solid red;
   }
 }
 
@@ -2243,5 +2269,9 @@ button.vjs-play-control.vjs-control.vjs-button {
 .search__wrapper-item-box-desc {
   color: grey;
   font-size: 18px;
+}
+
+.account {
+  margin-top: 100px;
 }
 /*# sourceMappingURL=style.css.map */
