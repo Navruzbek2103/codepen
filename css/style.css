@@ -1594,6 +1594,22 @@ video {
   border-color: transparent;
 }
 
+.static {
+  position: static !important;
+  background-color: #1f1d2b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 20px 30px;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
 .vjs-play-control:after {
   content: "LIVE";
   position: absolute;
@@ -2285,6 +2301,145 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 
 .account {
-  margin-top: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 920px) {
+  .account {
+    margin-bottom: 60px;
+  }
+}
+
+.account-top {
+  background-color: #252837;
+  padding: 40px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.account-top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.account-top-avatar {
+  width: 120px;
+  height: 120px;
+}
+
+.account-top-box-title {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.account-top-box-text {
+  letter-spacing: 1px;
+}
+
+.account-statistics-list {
+  background-color: #252837;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.account-statistics-item {
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-weight: 900;
+}
+
+.account-statistics-item-span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #5aa0d7;
+}
+
+.account-news-box {
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-news-box-title {
+  font-size: 26px;
+}
+
+.account-news-box-link {
+  display: block;
+  color: #fff;
+  background-color: #f0426b;
+  border-radius: 20px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+
+.account-news-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.account-news-item {
+  width: 370px;
+  margin: 15px auto;
+}
+
+.account-news-item-link {
+  position: relative;
+}
+
+.account-news-item-img {
+  width: 100%;
+  height: 300px;
+}
+
+.account-news-item-subtitle {
+  position: absolute;
+  bottom: 0;
+  font-size: 26px;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 920px) {
+  .chat-stream-hidden-account {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

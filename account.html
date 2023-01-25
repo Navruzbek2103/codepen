@@ -64,7 +64,7 @@
                 Latest info
               </a>
               <a
-                class="sidebar-link sidebar-link-account  is-active"
+                class="sidebar-link sidebar-link-account is-active"
                 href="./account.html"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -287,10 +287,10 @@
             </div>
             <a href="./account.html" class="user-img-link">
               <img
-              class="user-img"
-              src="https://images.unsplash.com/photo-1587918842454-870dbd18261a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=943&q=80"
-              alt="user image"
-            />
+                class="user-img"
+                src="https://images.unsplash.com/photo-1587918842454-870dbd18261a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=943&q=80"
+                alt="user image"
+              />
             </a>
             <div class="user-name">Thomas</div>
             <svg viewBox="0 0 492 492" fill="currentColor">
@@ -312,64 +312,90 @@
         </div>
         <div class="main-container">
           <div class="stream-area">
-            <div class="video-stream-category">
-              <video
-                id="my_video_1"
-                class="video-js vjs-default-skin anim"
-                width="640px"
-                height="267px"
-                controls
-                preload="none"
-                poster="https://images.unsplash.com/photo-1476801071117-fbc157ae3f01?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8&w=1000&q=80"
-                data-setup='{ "aspectRatio":"940:620", "playbackRates": [1, 1.5, 2] }'
-              >
-                <source
-                  src="https://player.vimeo.com/external/390402719.sd.mp4?s=20cfdb066c4253047562b65bd4e411b86a004bc5&profile_id=139&oauth2_token_id=57447761"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://player.vimeo.com/external/390402719.sd.mp4?s=20cfdb066c4253047562b65bd4e411b86a004bc5&profile_id=139&oauth2_token_id=57447761"
-                  type="video/webm"
-                />
-              </video>
-              <div class="video-detail">
-                <div class="video-content">
-                  <div class="video-p-wrapper anim" style="--delay: 0.1s">
-                    <div class="button-wrapper">
-                      <a href="" class="like">
-                        <svg
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M21.435 2.582a1.933 1.933 0 00-1.93-.503L3.408 6.759a1.92 1.92 0 00-1.384 1.522c-.142.75.355 1.704 1.003 2.102l5.033 3.094a1.304 1.304 0 001.61-.194l5.763-5.799a.734.734 0 011.06 0c.29.292.29.765 0 1.067l-5.773 5.8c-.428.43-.508 1.1-.193 1.62l3.075 5.083c.36.604.98.946 1.66.946.08 0 .17 0 .251-.01.78-.1 1.4-.634 1.63-1.39l4.773-16.075c.21-.685.02-1.43-.48-1.943z"
-                          />
-                        </svg>
-                        Share
-                      </a>
-                    </div>
-                  </div>
-                  <h2 class="video-p-title anim" style="--delay: 0.2s">
-                    Basic how to ride your Skateboard
-                  </h2>
-                  <p class="video-p-subtitle anim" style="--delay: 0.3s">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellendus illum tempora consequuntur. Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Debitis earum velit
-                    accusantium maiores qui sit quas, laborum voluptatibus vero
-                    quidem tempore facilis voluptate tempora deserunt!
-                  </p>
-                  <div class="video-p-subtitle anim" style="--delay: 0.4s">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus laborum qui dolorum fugiat eius accusantium
-                    repellendus illum tempora consequuntur. Lorem ipsum dolor,
-                    sit amet consectetur adipisicing elit.
+            <div class="account">
+              <div class="account-top">
+                <div class="account-top-inner">
+                  <img
+                    src="./images/user.png"
+                    alt="avatar"
+                    class="account-top-avatar"
+                  />
+                  <div class="account-top-box">
+                    <h2 class="account-top-box-title">John Smith</h2>
+                    <p class="account-top-box-text">ID: 2651352</p>
                   </div>
                 </div>
+                <img
+                  src="./images/edit-icon.png"
+                  alt="edit icon"
+                  class="account-top-edit"
+                />
+              </div>
+              <ul class="account-statistics-list">
+                <li class="account-statistics-item">
+                  <span class="account-statistics-item-span">57</span>
+                  Maqolalar
+                </li>
+                <li class="account-statistics-item">
+                  <span class="account-statistics-item-span">25</span>
+                  Maqolalar
+                </li>
+                <li class="account-statistics-item">
+                  <span class="account-statistics-item-span">14</span>
+                  Maqolalar
+                </li>
+              </ul>
+              <div class="account-news">
+                <div class="account-news-box">
+                  <h2 class="account-news-box-title">Site news</h2>
+                  <a href="" class="account-news-box-link"> See all </a>
+                </div>
+                <ul class="account-news-list">
+                  <li class="account-news-item">
+                    <a href="" class="account-news-item-link">
+                      <img
+                        src="./images/card-img.jpg"
+                        alt="card image"
+                        class="account-news-item-img"
+                      />
+                      <h3 class="account-news-item-subtitle">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </a>
+                  </li>
+                  <li class="account-news-item">
+                    <a href="" class="account-news-item-link">
+                      <img
+                        src="./images/card-img.jpg"
+                        alt="card image"
+                        class="account-news-item-img"
+                      />
+                      <h3 class="account-news-item-subtitle">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </a>
+                  </li>
+                  <li class="account-news-item">
+                    <a href="" class="account-news-item-link">
+                      <img
+                        src="./images/card-img.jpg"
+                        alt="card image"
+                        class="account-news-item-img"
+                      />
+                      <h3 class="account-news-item-subtitle">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </a>
+                  </li>
+                  <li class="account-news-item">
+                    <a href="" class="account-news-item-link">
+                      <img
+                        src="./images/card-img.jpg"
+                        alt="card image"
+                        class="account-news-item-img"
+                      />
+                      <h3 class="account-news-item-subtitle">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </a>
+                  </li>
+
+                </ul>
               </div>
             </div>
-            <div class="chat-stream">
+            <div class="chat-stream chat-stream-hidden-account">
               <div class="chat">
                 <h3 class="chat-header anim">
                   Top stars<span
