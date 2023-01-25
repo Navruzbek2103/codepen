@@ -303,7 +303,7 @@ a {
   position: absolute;
   left: 0;
   top: 70px;
-  z-index: 123;
+  z-index: 9999999;
   background-color: #1f1d2b;
   width: 100vw;
   height: 100vh;
@@ -1468,7 +1468,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 .search-bar {
   position: relative;
 }
-.lupa-2 {
+.lupa2 {
   cursor: pointer;
   position: absolute;
   top: 5px;
@@ -1699,7 +1699,7 @@ button.vjs-play-control.vjs-control.vjs-button {
     padding: 30px 0;
     background-color: #1f1d2b;
     margin: 0 auto 80px;
-    z-index: 999;
+    z-index: 9;
 
     @media only screen and (max-width: 921px){
       width: 90%;
