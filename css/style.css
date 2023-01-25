@@ -2486,6 +2486,7 @@ button.vjs-play-control.vjs-control.vjs-button {
     font-size: 20px;
   }
   .account-statistics-list {
+    border-radius: 15px;
     padding: 20px 0px;
   }
   .account-statistics-item {
