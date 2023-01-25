@@ -1562,9 +1562,11 @@ button.vjs-play-control.vjs-control.vjs-button {
   }
   .sidebar-link {
     margin: 0 !important;
+    // border: 1px solid red;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+
 
     @media only screen and (max-width: 500px) {
       font-size: 14px;
