@@ -2008,3 +2008,46 @@ button.vjs-play-control.vjs-control.vjs-button {
     }
   }
 }
+
+
+// category
+
+.category{
+  width: 100%;
+
+  &-title{
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-item{
+    width: 380px;
+    margin: 10px auto;
+    border-radius: 15px;
+    overflow: hidden;
+
+    &-link{
+      position: relative;
+      width: 100%;
+
+      &-img{
+        height: 250px;
+        border-radius: 15px;
+      }
+
+      &-title{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 20px;
+        font-size: 30px;
+        font-weight: bolder;
+      }
+    }
+  }
+}

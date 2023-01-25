@@ -2507,4 +2507,47 @@ button.vjs-play-control.vjs-control.vjs-button {
     font-size: 18px;
   }
 }
+
+.category {
+  width: 100%;
+}
+
+.category-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.category-item {
+  width: 380px;
+  margin: 10px auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.category-item-link {
+  position: relative;
+  width: 100%;
+}
+
+.category-item-link-img {
+  height: 250px;
+  border-radius: 15px;
+}
+
+.category-item-link-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+}
 /*# sourceMappingURL=style.css.map */
