@@ -1285,7 +1285,16 @@ video {
     border-color: transparent;
   }
 }
-
+.static {
+  position: static !important;
+  background-color: #1f1d2b;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 20px 30px;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
 .vjs-play-control:after {
   content: "LIVE";
   position: absolute;
