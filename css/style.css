@@ -312,19 +312,18 @@ a {
 }
 
 .side-menu svg {
-  width: 30px;
-  height: 32px;
+  width: 34px;
   padding: 8px;
   border-radius: 10px;
   background-color: var(--button-bg);
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  margin-right: 16px;
 }
 
 @media only screen and (max-width: 500px) {
   .side-menu svg {
     width: 35px;
-    height: 37px;
   }
 }
 

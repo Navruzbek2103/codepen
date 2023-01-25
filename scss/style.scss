@@ -186,6 +186,7 @@ a {
     margin-top: 25px;
     flex-wrap: wrap;
     gap: 10px;
+
   }
 
   &-icon-item {
@@ -214,6 +215,7 @@ a {
     }
     .side-menu svg {
       margin-right: 30px;
+
     }
   }
 }
@@ -245,17 +247,15 @@ a {
     }
   }
   svg {
-    width: 30px;
-    height: 32px;
+    width: 34px;
     padding: 8px;
     border-radius: 10px;
     background-color: var(--button-bg);
     flex-shrink: 0;
-    // margin-right: 16px;
+    margin-right: 16px;
 
     @media only screen and (max-width: 500px){
       width: 35px;
-      height: 37px;
     }
 
     &:hover {
@@ -1165,6 +1165,7 @@ video {
       object-fit: cover;
       object-position: right;
       margin-right: 16px;
+
       transition: 0.3s;
       &:hover {
         transform: scale(1.02);
@@ -1646,6 +1647,7 @@ button.vjs-play-control.vjs-control.vjs-button {
       align-items: center;
       color: black;
       gap: 8px;
+
       margin-bottom: 15px;
       background-color: rgb(253, 196, 131);
       box-shadow: 0 0 8px 1px cyan;
@@ -1774,6 +1776,7 @@ button.vjs-play-control.vjs-control.vjs-button {
         display: flex;
         flex-direction: row;
         gap: 20px;
+
         transition: all 0.2s ease-in;
 
         &:hover {
@@ -1823,6 +1826,7 @@ button.vjs-play-control.vjs-control.vjs-button {
           display: flex;
           align-items: center;
           gap: 10px;
+
           margin-bottom: 15px;
         }
 
@@ -1857,6 +1861,7 @@ button.vjs-play-control.vjs-control.vjs-button {
       display: flex;
       align-items: center;
       gap: 20px;
+
     }
     &-avatar {
       width: 120px;
