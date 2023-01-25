@@ -91,7 +91,7 @@ a {
 
 .sidebar {
   z-index: 9;
-  width: 15%;
+  width: 17%;
   position: fixed;
   height: 100%;
   padding: 30px;
@@ -342,7 +342,7 @@ a {
 }
 
 .wrapper {
-  width: 85%;
+  width: 83%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,7 +355,8 @@ a {
 
 .header {
   position: fixed;
-  width: 84%;
+  width: 80%;
+  margin-left: 3%;
   z-index: 19;
   background-color: #1f1d2b;
   display: -webkit-box;
@@ -527,6 +528,7 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .user-name {
@@ -542,6 +544,8 @@ a {
 }
 
 .main-container {
+  width: 96%;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -990,6 +994,7 @@ video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 940px) {
@@ -1792,6 +1797,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 
 .video-live {
+  margin: 0 auto;
   width: 250px;
 }
 
@@ -2152,6 +2158,12 @@ button.vjs-play-control.vjs-control.vjs-button {
   }
 }
 
+@media only screen and (max-width: 921px) {
+  .search__input-box {
+    padding: 20px 0;
+  }
+}
+
 .search__input-box-input {
   padding: 15px;
   width: 50%;
@@ -2185,6 +2197,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   width: 90%;
   margin: 0 auto;
   margin-top: 150px;
+  margin-bottom: 20px;
 }
 
 .search__wrapper-item {

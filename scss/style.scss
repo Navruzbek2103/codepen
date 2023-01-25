@@ -79,7 +79,7 @@ a {
 .sidebar {
   // right: 0;
   z-index: 9;
-  width: 15%;
+  width: 17%;
   // width: 220px;
   position: fixed;
   height: 100%;
@@ -273,7 +273,7 @@ a {
 
 .wrapper {
   // max-width: 1300px;
-  width: 85%;
+  width: 83%;
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -281,7 +281,8 @@ a {
 
 .header {
   position: fixed;
-  width: 84%;
+  width: 80%;
+  margin-left: 3%;
   z-index: 19;
   background-color: #1f1d2b;
   display: flex;
@@ -419,6 +420,7 @@ a {
     flex-shrink: 0;
     object-fit: cover;
     border-radius: 50%;
+    cursor: pointer;
   }
   &-name {
     color: #fff;
@@ -431,6 +433,8 @@ a {
 }
 
 .main-container {
+  width: 96%;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   padding: 0 30px 30px;
@@ -818,7 +822,7 @@ video {
 .stream-area {
   width: 100%;
   display: flex;
-  // display: none;
+  margin-top: 20px;
   @media screen and (max-width: 940px) {
     flex-direction: column;
     .video-stream {
@@ -873,17 +877,6 @@ video {
   }
 }
 
-// .show {
-//   .stream-area {
-//     display: flex;
-//   }
-//   .main-header,
-//   .main-blogs,
-//   .small-header,
-//   .videos {
-//     display: none;
-//   }
-// }
 
 .video-stream {
   width: 100%;
@@ -1452,6 +1445,8 @@ button.vjs-play-control.vjs-control.vjs-button {
   align-items: center;
 }
 .video-live {
+  // display: block;
+  margin: 0 auto;
   width: 250px;
 }
 .live__wrap {
@@ -1720,6 +1715,9 @@ button.vjs-play-control.vjs-control.vjs-button {
     @media only screen and (max-width: 921px) {
       width: 90%;
     }
+    @media only screen and (max-width: 921px) {
+      padding: 20px 0;
+    }
 
     &-input {
       padding: 15px;
@@ -1742,6 +1740,7 @@ button.vjs-play-control.vjs-control.vjs-button {
       width: 90%;
       margin: 0 auto;
       margin-top: 150px;
+      margin-bottom: 20px;
     }
     &-item {
       margin-bottom: 40px;
