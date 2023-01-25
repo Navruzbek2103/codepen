@@ -1978,9 +1978,6 @@ button.vjs-play-control.vjs-control.vjs-button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
 }
 
@@ -1998,6 +1995,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 @media screen and (max-width: 920px) {
   .sidebar-link svg {
+    width: 32px;
     margin-bottom: 10px;
     margin-right: 0;
   }
