@@ -245,13 +245,18 @@ a {
     }
   }
   svg {
-    width: 40%;
+    width: 30px;
+    height: 32px;
     padding: 8px;
     border-radius: 10px;
     background-color: var(--button-bg);
     flex-shrink: 0;
-    margin-right: 16px;
+    // margin-right: 16px;
 
+    @media only screen and (max-width: 500px){
+      width: 35px;
+      height: 37px;
+    }
 
     &:hover {
       color: #fff;
