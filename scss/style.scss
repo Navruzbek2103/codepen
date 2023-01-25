@@ -700,6 +700,7 @@ a {
 }
 
 .video {
+  // height: 310px;
   position: relative;
   background-color: var(--video-bg);
   border-radius: 20px;
@@ -790,7 +791,7 @@ a {
     }
   }
 }
-.video-p-sub{
+.video-p-sub {
   color: grey;
 }
 
@@ -804,7 +805,7 @@ video {
 
 .video-img-banner {
   width: 100%;
-  height: 160px;
+  height: 190px;
 }
 .stream-area {
   width: 100%;
@@ -1685,6 +1686,112 @@ button.vjs-play-control.vjs-control.vjs-button {
       &-text {
         color: black;
         font-size: 17px;
+      }
+    }
+  }
+}
+
+// search menu
+.search {
+  &__input-box {
+    position: fixed;
+    width: 83%;
+    padding: 30px 0;
+    background-color: #1f1d2b;
+    margin: 0 auto 80px;
+    z-index: 999;
+
+    @media only screen and (max-width: 921px){
+      width: 90%;
+    }
+
+    &-input {
+      padding: 15px;
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+      font-size: 22px;
+      // position: relative;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px 5px grey;
+
+      &::placeholder {
+        columns: grey;
+      }
+    }
+  }
+
+  &__wrapper {
+    &-list {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 150px;
+    }
+    &-item {
+      margin-bottom: 40px;
+      &-link {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          box-shadow: 0 0 5px 1px grey;
+          border-radius: 10px;
+        }
+
+        &:active {
+          transform: scale(0.95);
+        }
+
+        @media only screen and (max-width: 700px) {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          .search__wrapper-item-img{
+            width: 400px;
+            height: 250px;
+          }
+
+          .search__wrapper-item-box-text{
+
+            margin: 0 auto;
+            border: 1px solid red;
+          }
+        }
+      }
+
+      &-img {
+        width: 250px;
+        height: 150px;
+        border-radius: 6px;
+      }
+
+      &-box {
+        padding-bottom: 10px;
+        width: 100%;
+        border-bottom: 1px solid grey;
+
+        &-title {
+          color: white;
+          margin-bottom: 15px;
+        }
+
+        &-text {
+          width: 160px;
+          color: grey;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 15px;
+        }
+
+        &-desc {
+          color: grey;
+          font-size: 18px;
+        }
       }
     }
   }
