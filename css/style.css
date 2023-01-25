@@ -2353,7 +2353,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 .account-statistics-list {
   background-color: #252837;
-  padding: 20px 0;
+  padding: 20px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2380,6 +2380,10 @@ button.vjs-play-control.vjs-control.vjs-button {
   font-size: 28px;
   font-weight: bold;
   color: #5aa0d7;
+}
+
+.account-news {
+  margin-bottom: 10px;
 }
 
 .account-news-box {
@@ -2417,6 +2421,8 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 
 .account-news-item {
+  border-radius: 20px;
+  overflow: hidden;
   width: 370px;
   margin: 15px auto;
 }
@@ -2435,11 +2441,62 @@ button.vjs-play-control.vjs-control.vjs-button {
   bottom: 0;
   font-size: 26px;
   margin: 20px;
+  color: black;
+  text-shadow: 0 0 7px white;
 }
 
 @media only screen and (max-width: 920px) {
   .chat-stream-hidden-account {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .account-top {
+    padding: 30px;
+  }
+  .account-top-avatar {
+    width: 90px;
+    height: 90px;
+  }
+  .account-top-box-title {
+    font-size: 22px;
+  }
+  .account-statistics-list {
+    padding: 20px 10px;
+  }
+  .account-statistics-item {
+    font-size: 18px;
+  }
+  .account-statistics-item-span {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .account-top {
+    padding: 25px 20px;
+  }
+  .account-top-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .account-top-box-title {
+    margin-bottom: 7px;
+    font-size: 20px;
+  }
+  .account-statistics-list {
+    padding: 20px 0px;
+  }
+  .account-statistics-item {
+    font-size: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .account-statistics-item-span {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

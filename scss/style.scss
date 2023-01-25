@@ -1860,7 +1860,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   &-statistics {
     &-list {
       background-color: #252837;
-      padding: 20px 0;
+      padding: 20px 10px;
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 25px;
@@ -1883,6 +1883,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   }
 
   &-news {
+    margin-bottom: 10px;
     &-box {
       padding: 25px 0;
       display: flex;
@@ -1908,6 +1909,8 @@ button.vjs-play-control.vjs-control.vjs-button {
     }
 
     &-item {
+      border-radius: 20px;
+      overflow: hidden;
       width: 370px;
       margin: 15px auto;
 
@@ -1924,6 +1927,8 @@ button.vjs-play-control.vjs-control.vjs-button {
         bottom: 0;
         font-size: 26px;
         margin: 20px;
+        color: black;
+        text-shadow: 0 0 7px white;
       }
     }
   }
@@ -1931,5 +1936,64 @@ button.vjs-play-control.vjs-control.vjs-button {
 @media only screen and (max-width: 920px) {
   .chat-stream-hidden-account {
     display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .account {
+    &-top {
+      padding: 30px;
+      &-avatar {
+        width: 90px;
+        height: 90px;
+      }
+
+      &-box-title {
+        font-size: 22px;
+      }
+    }
+
+    &-statistics {
+      &-list {
+        padding: 20px 10px;
+      }
+      &-item {
+        font-size: 18px;
+
+        &-span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .account {
+    &-top {
+      padding: 25px 20px;
+      &-avatar {
+        width: 60px;
+        height: 60px;
+      }
+
+      &-box-title {
+        margin-bottom: 7px;
+        font-size: 20px;
+      }
+    }
+
+    &-statistics {
+      &-list {
+        padding: 20px 0px;
+      }
+      &-item {
+        font-size: 16px;
+        flex-direction: column;
+
+        &-span {
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
