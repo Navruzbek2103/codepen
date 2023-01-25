@@ -441,6 +441,10 @@ a {
   flex-grow: 1;
   overflow: auto;
   margin-top: 80px;
+
+  @media only screen and (max-width: 920px){
+    margin-left: 0;
+  }
 }
 
 .anim {
@@ -1505,6 +1509,10 @@ button.vjs-play-control.vjs-control.vjs-button {
     display: none;
   }
 
+  .sidebar-link-latest{
+    display: none !important;
+    border: 1px solid red;
+  }
   .open-searchs {
     display: none !important;
   }
@@ -1821,10 +1829,11 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 .account {
   width: 100%;
-  margin: 0 auto;
 
   @media only screen and (max-width: 920px) {
-    margin-bottom: 60px;
+    .account {
+      margin-bottom: 60px;
+    }
   }
   &-top {
     background-color: #252837;

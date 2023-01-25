@@ -561,6 +561,12 @@ a {
   margin-top: 80px;
 }
 
+@media only screen and (max-width: 920px) {
+  .main-container {
+    margin-left: 0;
+  }
+}
+
 .anim {
   -webkit-animation: bottom 0.5s var(--delay) both;
           animation: bottom 0.5s var(--delay) both;
@@ -1881,6 +1887,10 @@ button.vjs-play-control.vjs-control.vjs-button {
   .search {
     display: none;
   }
+  .sidebar-link-latest {
+    display: none !important;
+    border: 1px solid red;
+  }
   .open-searchs {
     display: none !important;
   }
@@ -2302,11 +2312,10 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 .account {
   width: 100%;
-  margin: 0 auto;
 }
 
 @media only screen and (max-width: 920px) {
-  .account {
+  .account .account {
     margin-bottom: 60px;
   }
 }
