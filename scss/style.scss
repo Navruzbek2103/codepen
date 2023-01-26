@@ -440,10 +440,17 @@ a {
   padding: 0 30px 30px;
   flex-grow: 1;
   overflow: auto;
-  margin-top: 80px;
+  margin-top: 70px;
 
   @media only screen and (max-width: 920px) {
     margin-left: 0;
+    margin-top: 65px;
+  }
+  @media only screen and (max-width: 600px) {
+    margin-top: 57px;
+  }
+  @media only screen and (max-width: 450px) {
+    margin-top: 50px;
   }
 }
 
@@ -2041,7 +2048,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   }
 
   &-item {
-    width: 380px;
+    width: 46%;
     margin: 10px auto;
     border-radius: 15px;
     overflow: hidden;
@@ -2051,7 +2058,7 @@ button.vjs-play-control.vjs-control.vjs-button {
       width: 100%;
 
       &-img {
-        height: 250px;
+        // height: 250px;
         border-radius: 15px;
       }
 
@@ -2062,6 +2069,11 @@ button.vjs-play-control.vjs-control.vjs-button {
         margin: 20px;
         font-size: 30px;
         font-weight: bolder;
+        color: white;
+
+        @media only screen and (max-width: 500px){
+          font-size: 24px;
+        }
       }
     }
   }
