@@ -2390,7 +2390,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 
 .account-news {
-  margin-bottom: 10px;
+  margin-bottom: 80px;
 }
 
 .account-news-box {
@@ -2430,8 +2430,8 @@ button.vjs-play-control.vjs-control.vjs-button {
 .account-news-item {
   border-radius: 20px;
   overflow: hidden;
-  width: 370px;
-  margin: 15px auto;
+  width: 46%;
+  margin: 1.5% auto;
 }
 
 .account-news-item-link {
@@ -2440,16 +2440,35 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 .account-news-item-img {
   width: 100%;
-  height: 300px;
 }
 
 .account-news-item-subtitle {
+  width: 90%;
   position: absolute;
   bottom: 0;
   font-size: 26px;
   margin: 20px;
-  color: black;
-  text-shadow: 0 0 7px white;
+  color: white;
+}
+
+@media only screen and (max-width: 735px) {
+  .account-news-item-subtitle {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .account-news-item-subtitle {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .account-news-item-subtitle {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 920px) {

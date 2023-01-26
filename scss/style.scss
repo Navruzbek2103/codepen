@@ -442,7 +442,7 @@ a {
   overflow: auto;
   margin-top: 80px;
 
-  @media only screen and (max-width: 920px){
+  @media only screen and (max-width: 920px) {
     margin-left: 0;
   }
 }
@@ -1509,7 +1509,7 @@ button.vjs-play-control.vjs-control.vjs-button {
     display: none;
   }
 
-  .sidebar-link-latest{
+  .sidebar-link-latest {
     display: none !important;
     border: 1px solid red;
   }
@@ -1564,7 +1564,6 @@ button.vjs-play-control.vjs-control.vjs-button {
     margin: 0 !important;
     display: flex;
     flex-direction: column;
-
 
     @media only screen and (max-width: 500px) {
       font-size: 14px;
@@ -1893,7 +1892,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   }
 
   &-news {
-    margin-bottom: 10px;
+    margin-bottom: 80px;
     &-box {
       padding: 25px 0;
       display: flex;
@@ -1921,8 +1920,9 @@ button.vjs-play-control.vjs-control.vjs-button {
     &-item {
       border-radius: 20px;
       overflow: hidden;
-      width: 370px;
-      margin: 15px auto;
+      // width: 370px;
+      width: 46%;
+      margin: 1.5% auto;
 
       &-link {
         position: relative;
@@ -1930,15 +1930,28 @@ button.vjs-play-control.vjs-control.vjs-button {
 
       &-img {
         width: 100%;
-        height: 300px;
+        // height: 300px;
       }
       &-subtitle {
+        width: 90%;
         position: absolute;
         bottom: 0;
         font-size: 26px;
         margin: 20px;
-        color: black;
-        text-shadow: 0 0 7px white;
+        color: white;
+
+        @media only screen and (max-width: 735px) {
+          font-size: 23px;
+        }
+
+        @media only screen and (max-width: 600px) {
+          font-size: 20px;
+        }
+        @media only screen and (max-width: 500px) {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
       }
     }
   }
@@ -2009,38 +2022,37 @@ button.vjs-play-control.vjs-control.vjs-button {
   }
 }
 
-
 // category
 
-.category{
+.category {
   width: 100%;
 
-  &-title{
+  &-title {
     font-size: 32px;
     margin-bottom: 20px;
   }
 
-  &-list{
+  &-list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  &-item{
+  &-item {
     width: 380px;
     margin: 10px auto;
     border-radius: 15px;
     overflow: hidden;
 
-    &-link{
+    &-link {
       position: relative;
       width: 100%;
 
-      &-img{
+      &-img {
         height: 250px;
         border-radius: 15px;
       }
 
-      &-title{
+      &-title {
         position: absolute;
         bottom: 0;
         left: 0;
