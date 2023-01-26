@@ -494,11 +494,11 @@ a {
 
 .user-settings .notify {
   position: relative;
+  margin-right: 10px;
 }
 
 .user-settings .notify svg {
   width: 20px;
-  margin-left: 24px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -534,7 +534,6 @@ a {
 .user-name {
   color: #fff;
   font-size: 14px;
-  margin: 0 6px 0 12px;
 }
 
 @media screen and (max-width: 575px) {
