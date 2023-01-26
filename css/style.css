@@ -558,25 +558,25 @@ a {
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow: auto;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 @media only screen and (max-width: 920px) {
   .main-container {
     margin-left: 0;
-    margin-top: 65px;
+    margin-top: 85px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .main-container {
-    margin-top: 57px;
+    margin-top: 80px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .main-container {
-    margin-top: 50px;
+    margin-top: 68px;
   }
 }
 
@@ -2008,7 +2008,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 @media screen and (max-width: 920px) {
   .sidebar-link svg {
-    width: 37px;
+    width: 45px;
     margin-bottom: 10px;
     margin-right: 0;
   }

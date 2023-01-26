@@ -440,17 +440,17 @@ a {
   padding: 0 30px 30px;
   flex-grow: 1;
   overflow: auto;
-  margin-top: 70px;
+  margin-top: 80px;
 
   @media only screen and (max-width: 920px) {
     margin-left: 0;
-    margin-top: 65px;
+    margin-top: 85px;
   }
   @media only screen and (max-width: 600px) {
-    margin-top: 57px;
+    margin-top: 80px;
   }
   @media only screen and (max-width: 450px) {
-    margin-top: 50px;
+    margin-top: 68px;
   }
 }
 
@@ -1580,7 +1580,7 @@ button.vjs-play-control.vjs-control.vjs-button {
     }
 
     svg {
-      width: 37px;
+      width: 45px;
       margin-bottom: 10px;
       margin-right: 0;
     }
