@@ -2017,6 +2017,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 @media screen and (max-width: 920px) {
   .sidebar-link svg {
     width: 35px;
+    height: 35px;
     margin: 0;
     margin-bottom: 10px;
   }
