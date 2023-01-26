@@ -2185,18 +2185,19 @@ button.vjs-play-control.vjs-control.vjs-button {
   width: 83%;
   padding: 30px 0;
   background-color: #1f1d2b;
-  margin: 0 auto 80px;
+  margin: 0 auto 0px;
   z-index: 9;
 }
 
 @media only screen and (max-width: 921px) {
   .search__input-box {
     width: 90%;
+    padding: 25px 0;
   }
 }
 
 .search__input-box-input {
-  padding: 15px;
+  padding: 12px 15px;
   width: 50%;
   margin: 0 auto;
   display: block;
@@ -2224,10 +2225,27 @@ button.vjs-play-control.vjs-control.vjs-button {
           columns: grey;
 }
 
+@media only screen and (max-width: 600px) {
+  .search__input-box-input {
+    width: 60%;
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .search__input-box-input {
+    width: 90%;
+    padding: 8px 15px;
+    margin-left: 3%;
+    font-size: 16px;
+  }
+}
+
 .search__wrapper-list {
   width: 90%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 125px;
   margin-bottom: 20px;
 }
 
