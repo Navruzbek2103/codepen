@@ -1738,9 +1738,6 @@ button.vjs-play-control.vjs-control.vjs-button {
     @media only screen and (max-width: 921px) {
       width: 90%;
     }
-    @media only screen and (max-width: 921px) {
-      padding: 20px 0;
-    }
 
     &-input {
       padding: 15px;
@@ -1766,11 +1763,14 @@ button.vjs-play-control.vjs-control.vjs-button {
       margin-bottom: 20px;
     }
     &-item {
+      border-bottom: 1px solid grey;
       margin-bottom: 40px;
+      padding-bottom: 10px;
+
       &-link {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        align-items: center;
         gap: 20px;
         transition: all 0.2s ease-in;
 
@@ -1782,39 +1782,41 @@ button.vjs-play-control.vjs-control.vjs-button {
         &:active {
           transform: scale(0.95);
         }
-
-        @media only screen and (max-width: 700px) {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-
-          .search__wrapper-item-img {
-            width: 400px;
-            height: 250px;
-          }
-
-          .search__wrapper-item-box-text {
-            margin: 0 auto;
-          }
-        }
       }
 
       &-img {
-        width: 250px;
-        height: 150px;
+        width: 25%;
         border-radius: 6px;
+
+        @media only screen and (max-width: 1200px) {
+          width: 35%;
+        }
+
+        @media only screen and (max-width: 700px) {
+          width: 35%;
+        }
       }
 
       &-box {
         padding-bottom: 10px;
         width: 100%;
-        border-bottom: 1px solid grey;
 
         &-title {
           color: white;
           margin-bottom: 15px;
+          @media only screen and (max-width: 800px) {
+            margin-bottom: 10px;
+            font-size: 18px;
+          }
+          @media only screen and (max-width: 650px) {
+            margin-bottom: 6px;
+            font-size: 16px;
+          }
         }
 
+        &-icon {
+          width: 15px;
+        }
         &-text {
           width: 160px;
           color: grey;
@@ -1822,11 +1824,38 @@ button.vjs-play-control.vjs-control.vjs-button {
           align-items: center;
           gap: 10px;
           margin-bottom: 15px;
+
+          @media only screen and (max-width: 800px) {
+            margin-bottom: 10px;
+            font-size: 15px;
+          }
         }
 
         &-desc {
           color: grey;
           font-size: 18px;
+
+          @media only screen and (max-width: 800px) {
+            width: 340px;
+            font-size: 17px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+
+          @media only screen and (max-width: 650px) {
+            width: 260px;
+            font-size: 16px;
+          }
+          @media only screen and (max-width: 500px) {
+            width: 180px;
+            font-size: 14px;
+          }
+
+          @media only screen and (max-width: 450px) {
+            width: 150px;
+            font-size: 14px;
+          }
         }
       }
     }
@@ -2071,7 +2100,7 @@ button.vjs-play-control.vjs-control.vjs-button {
         font-weight: bolder;
         color: white;
 
-        @media only screen and (max-width: 500px){
+        @media only screen and (max-width: 500px) {
           font-size: 24px;
         }
       }
