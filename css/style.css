@@ -2428,7 +2428,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 
 .account-news-item {
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
   width: 46%;
   margin: 1.5% auto;
@@ -2439,6 +2439,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 
 .account-news-item-img {
+  border-radius: 15px;
   width: 100%;
 }
 
@@ -2454,6 +2455,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 @media only screen and (max-width: 735px) {
   .account-news-item-subtitle {
     font-size: 23px;
+    margin: 15px;
   }
 }
 
@@ -2465,6 +2467,8 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 @media only screen and (max-width: 500px) {
   .account-news-item-subtitle {
+    margin: 10px;
+    font-size: 17px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
