@@ -1099,8 +1099,6 @@ video {
 
 .video-stream-category {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1790,6 +1788,15 @@ button.vjs-play-control.vjs-control.vjs-button {
   cursor: pointer;
   display: none;
   margin: 0 10px;
+  width: 28px;
+  height: 28px;
+}
+
+@media only screen and (max-width: 650px) {
+  .lupa {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1803,6 +1810,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 .category-wrap {
   margin-left: 200px !important;
+  background-color: #1f1d2b;
 }
 
 .live {
@@ -2008,7 +2016,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 @media screen and (max-width: 920px) {
   .sidebar-link svg {
-    width: 45px;
+    width: 32px;
     margin-bottom: 10px;
     margin-right: 0;
   }

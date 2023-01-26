@@ -901,7 +901,7 @@ video {
 
 .video-stream-category {
   width: 100%;
-  object-fit: cover;
+  // object-fit: cover;
   transition: 0.3s;
   &:hover .video-js .vjs-big-play-button {
     opacity: 1;
@@ -1440,6 +1440,13 @@ button.vjs-play-control.vjs-control.vjs-button {
   cursor: pointer;
   display: none;
   margin: 0 10px;
+  width: 28px;
+  height: 28px;
+
+  @media only screen and (max-width: 650px) {
+    width: 23px;
+    height: 23px;
+  }
 }
 ::-webkit-scrollbar-thumb {
   background-color: #15141aa1;
@@ -1450,6 +1457,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 .category-wrap {
   margin-left: 200px !important;
+  background-color: #1f1d2b;
 }
 .live {
   display: flex;
@@ -1580,7 +1588,7 @@ button.vjs-play-control.vjs-control.vjs-button {
     }
 
     svg {
-      width: 45px;
+      width: 32px;
       margin-bottom: 10px;
       margin-right: 0;
     }
@@ -1753,12 +1761,12 @@ button.vjs-play-control.vjs-control.vjs-button {
         columns: grey;
       }
 
-      @media only screen and (max-width:600px){
+      @media only screen and (max-width: 600px) {
         width: 60%;
         padding: 10px 15px;
         font-size: 20px;
       }
-      @media only screen and (max-width: 500px){
+      @media only screen and (max-width: 500px) {
         width: 90%;
         padding: 8px 15px;
         margin-left: 3%;
